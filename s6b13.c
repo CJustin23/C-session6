@@ -6,8 +6,6 @@ int main() {
     scanf("%d", &month);
     printf("Nhap nam sinh: ");
     scanf("%d", &day);
-
-    // Determine the zodiac sign based on the month and day
     if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
         printf("Cung hoang dao cua ban la : Bach Duong \n");
     } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
@@ -33,7 +31,7 @@ int main() {
     } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
         printf("Cung hoang dao cua ban la: Song Ngu\n");
     } else {
-        printf("Invalid date or month entered.\n");
+        printf("Ngay hoac thang khong hop le.\n");
     }
 
     return 0;
